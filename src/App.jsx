@@ -1,44 +1,327 @@
 export default function WaterIsLifeBrandWebsite() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans scroll-smooth">
+
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
           <div>
             <h1 className="text-2xl font-bold text-white tracking-wide">
               Water Is Life <span className="text-cyan-400">Brand</span>
             </h1>
           </div>
+
           <div className="hidden md:flex items-center gap-8 text-white text-sm font-medium">
             <a href="#home" className="hover:text-cyan-400 transition-colors">Home</a>
             <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
             <a href="#services" className="hover:text-cyan-400 transition-colors">Services</a>
             <a href="#benefits" className="hover:text-cyan-400 transition-colors">Benefits</a>
+            <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+          </div>
 
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-900 text-white overflow-hidden pt-24"
+      >
+
+        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-32 grid lg:grid-cols-2 gap-12 items-center">
+
+          <div>
+
+            <div className="inline-block px-4 py-2 rounded-full border border-cyan-400 text-cyan-300 text-sm mb-6 backdrop-blur-sm">
+              Premium Water Vending Machine Services
+            </div>
+
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+              Water Is Life
+              <span className="block text-cyan-400">Brand</span>
+            </h1>
+
+            <p className="text-lg lg:text-xl text-slate-200 mb-8 leading-relaxed max-w-xl">
+              Delivering clean, reliable, and premium-quality water vending machine services
+              for stores, malls, offices, hotels, and businesses across New York.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+
+              <a
+                href="tel:+17187906657"
+                className="bg-cyan-400 hover:bg-cyan-300 text-slate-900 px-8 py-4 rounded-2xl font-semibold transition-all duration-300 shadow-2xl"
+              >
+                Contact Us
+              </a>
+
+              <a
+                href="mailto:Bosedemimo2016@gmail.com"
+                className="border border-white/40 hover:bg-white hover:text-slate-900 px-8 py-4 rounded-2xl font-semibold transition-all duration-300"
+              >
+                Send Email
+              </a>
+
+            </div>
+
+          </div>
+
+          <div className="relative">
+
+            <div className="bg-white/10 backdrop-blur-md rounded-[32px] p-8 border border-white/10 shadow-2xl">
+
+              <img
+                src="https://images.unsplash.com/photo-1564419320408-38e24e038739?q=80&w=1974&auto=format&fit=crop"
+                alt="Water vending machine service"
+                className="rounded-3xl w-full h-[450px] object-cover"
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-24 bg-white">
+
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+          <div>
+
+            <img
+              src="https://images.unsplash.com/photo-1521207418485-99c705420785?q=80&w=1974&auto=format&fit=crop"
+              alt="Clean water vending"
+              className="rounded-[32px] shadow-2xl object-cover w-full h-[500px]"
+            />
+
+          </div>
+
+          <div>
+
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900">
+              Premium Water Vending Machines
+            </h2>
+
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              Water Is Life Brand provides modern and premium water vending machine
+              solutions with a strong focus on purity, innovation, reliability,
+              and customer satisfaction.
+            </p>
+
+            <p className="text-lg text-slate-600 leading-relaxed mb-8">
+              Our machines are professionally installed inside stores, malls,
+              offices, hotels, and commercial business locations across New York.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6">
+
+              <div className="bg-slate-100 rounded-2xl p-6 shadow-lg">
+                <h3 className="text-3xl font-bold text-cyan-700 mb-2">100%</h3>
+                <p className="text-slate-700">Clean & Trusted Water</p>
+              </div>
+
+              <div className="bg-slate-100 rounded-2xl p-6 shadow-lg">
+                <h3 className="text-3xl font-bold text-cyan-700 mb-2">24/7</h3>
+                <p className="text-slate-700">Customer Support</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Services */}
+      <section id="services" className="py-24 bg-slate-100">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+              Our Services
+            </h2>
+
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Professional water vending machine services for commercial and retail businesses.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {[
+              {
+                title: 'Water Vending Machines',
+                desc: 'Modern and reliable water vending machines for stores and commercial businesses.',
+              },
+              {
+                title: 'Machine Installation',
+                desc: 'Professional installation services for stores, malls, offices, and hotels.',
+              },
+              {
+                title: 'Maintenance & Support',
+                desc: 'Reliable maintenance and customer support for all vending systems.',
+              },
+            ].map((service, index) => (
+
+              <div
+                key={index}
+                className="bg-white rounded-[28px] p-8 shadow-xl hover:-translate-y-2 transition-all duration-300"
+              >
+
+                <div className="w-16 h-16 rounded-2xl bg-cyan-100 flex items-center justify-center mb-6 text-3xl">
+                  💧
+                </div>
+
+                <h3 className="text-2xl font-bold mb-4 text-slate-900">
+                  {service.title}
+                </h3>
+
+                <p className="text-slate-600 leading-relaxed">
+                  {service.desc}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Business Benefits Section */}
+      <section id="benefits" className="py-24 bg-white">
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-16">
+
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+              Why Stores Choose Water Is Life Brand
+            </h2>
+
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Our premium water vending machine solutions help stores attract customers,
+              generate extra income, and operate stress-free.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {/* Card 1 */}
+            <div className="bg-gradient-to-b from-blue-500 to-blue-700 text-white rounded-[32px] p-10 shadow-2xl text-center">
+
+              <div className="w-24 h-24 mx-auto rounded-full border-4 border-white flex items-center justify-center text-5xl font-bold mb-8">
+                1
+              </div>
+
+              <h3 className="text-3xl font-bold mb-6">
+                ATTRACTS CUSTOMERS
+              </h3>
+
+              <p className="text-lg leading-relaxed text-blue-100">
+                With the addition of a premium water vending machine inside your store,
+                you will experience increased customer traffic and more business visibility.
+              </p>
+
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-gradient-to-b from-cyan-500 to-blue-900 text-white rounded-[32px] p-10 shadow-2xl text-center">
+
+              <div className="w-24 h-24 mx-auto rounded-full border-4 border-white flex items-center justify-center text-5xl font-bold mb-8">
+                2
+              </div>
+
+              <h3 className="text-3xl font-bold mb-6">
+                ZERO HEADACHES
+              </h3>
+
+              <p className="text-lg leading-relaxed text-cyan-100">
+                Installation, servicing, maintenance, and support are fully managed by
+                Water Is Life Brand for smooth and stress-free operation.
+              </p>
+
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-gradient-to-b from-blue-400 to-blue-700 text-white rounded-[32px] p-10 shadow-2xl text-center">
+
+              <div className="w-24 h-24 mx-auto rounded-full border-4 border-white flex items-center justify-center text-5xl font-bold mb-8">
+                3
+              </div>
+
+              <h3 className="text-3xl font-bold mb-6">
+                GUARANTEED INCOME
+              </h3>
+
+              <p className="text-lg leading-relaxed text-blue-100">
+                Besides increased customer traffic and visibility,
+                Water Is Life Brand provides reliable monthly income
+                opportunities for store owners.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Contact Section */}
+      <section
+        id="contact"
+        className="py-24 bg-gradient-to-r from-slate-900 to-cyan-900 text-white"
+      >
+
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Contact Water Is Life Brand
           </h2>
+
           <p className="text-lg text-slate-200 mb-12 max-w-2xl mx-auto">
             Get in touch today for premium water vending machine services
             and professional installation in New York.
           </p>
+
           <div className="grid md:grid-cols-3 gap-8">
+
             <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10">
               <h3 className="text-xl font-semibold mb-3">Phone</h3>
               <p className="text-slate-200">+1 (718) 790-6657</p>
             </div>
+
             <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10">
               <h3 className="text-xl font-semibold mb-3">Email</h3>
               <p className="text-slate-200 break-all">
                 Bosedemimo2016@gmail.com
               </p>
             </div>
+
             <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10">
               <h3 className="text-xl font-semibold mb-3">Location</h3>
               <p className="text-slate-200">New York, United States</p>
             </div>
+
           </div>
+
         </div>
+
       </section>
+
       {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/17187906657"
@@ -48,12 +331,16 @@ export default function WaterIsLifeBrandWebsite() {
       >
         💬
       </a>
+
       {/* Footer */}
       <footer className="bg-slate-950 text-slate-400 py-8 text-center">
+
         <p>
           © 2026 Water Is Life Brand. All Rights Reserved.
         </p>
+
       </footer>
+
     </div>
   );
 }
